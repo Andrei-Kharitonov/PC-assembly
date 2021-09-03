@@ -1,0 +1,114 @@
+.program {
+  // .program__container
+  &__container {
+    max-width: 610px;
+    margin-top: 200px;
+    @media (max-width: $md3+px) {
+      margin-top: 100px;
+    }
+  }
+  // .program__header
+  &__header {
+    text-align: center;
+  }
+  // .program__header-icon
+  &__header-icon {
+    margin: auto;
+    img {
+      transform: rotate(135deg);
+    }
+  }
+  // .program__title
+  &__title {
+    margin-top: 80px;
+    @media (max-width: $md3+px) {
+      margin-top: 40px;
+    }
+  }
+  // .program__header-text
+  &__header-text {
+    opacity: 0.5;
+  }
+  // .program__body
+  &__body {
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    @media (max-width: $md3+px) {
+      margin-top: 40px;
+    }
+  }
+}
+
+.program-timeline {
+  // .program-timeline__week-container
+  &__week-container {
+    height: 470px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 30px;
+    &:first-child {
+      height: 650px;
+      text-align: right;
+      margin-left: 0;
+      margin-right: 30px;
+    }
+    @media (max-width: $md3+px) {
+      height: 430px;
+      margin-left: 8px;
+      &:first-child {
+        height: 610px;
+        margin-right: 8px;
+      }
+    }
+  }
+  // .program-timeline__week-num
+  &__week-num {
+    font-size: 14px;
+    line-height: 160%;
+    opacity: 0.5;
+    margin-bottom: 15px;
+    @media (max-width: $md3+px) {
+      margin-bottom: 0px;
+      font-size: 13px;
+    }
+  }
+  // .program-timeline__week-content
+  &__week-content {
+    margin: 0;
+    font-size: 18px;
+    line-height: 160%;
+    @media (max-width: $md3+px) {
+      font-size: 14px;
+    }
+  }
+  // .program-timeline__timeline
+  &__timeline {
+    display: flex;
+  }
+  // .program-timeline__bloks
+  &__bloks {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  // .program-timeline__blok
+  &__blok {
+    width: 40px;
+    height: 180px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    &:first-child {
+      border-top: 1px solid rgba(255, 255, 255, 0.3);
+    }
+    @media (max-width: $md3+px) {
+      width: 28px;
+    }
+  }
+  // .program-timeline__line
+  &__line {
+    height: 680px;
+    width: 7px;
+    background: linear-gradient(90deg, #c89afc, #7c6afa);
+  }
+}

@@ -1,0 +1,74 @@
+//<footer>=================================================
+.footer {
+  // .footer__container
+  &__container {
+    max-width: 550px;
+    text-align: center;
+    margin-top: 200px;
+    @media (max-width: $md3+px) {
+      margin-top: 100px;
+    }
+  }
+  // .footer__text
+  &__text {
+    opacity: 0.5;
+    margin-bottom: 65px;
+  }
+  // .footer__form
+  &__form {
+    position: relative;
+    max-width: 490px;
+    margin-bottom: 35px;
+  }
+  // .footer__input
+  &__input {
+    width: 100%;
+    padding: 20px 0 20px 20px;
+    border: none;
+    border-radius: 100px;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.2);
+    font-size: inherit;
+    font-family: inherit;
+  }
+  // .footer__btn
+  &__btn {
+    position: absolute;
+    top: 0;
+    right: -41px;
+    padding: 16px 30px;
+    cursor: pointer;
+    color: #fff;
+    height: auto;
+    border: none;
+    z-index: 1;
+    @media (max-width: $md3+px) {
+      right: -15px;
+    }
+  }
+  // .footer__icon-container
+  &__icon-container {
+    margin: 0 auto;
+    max-width: 290px;
+    display: flex;
+    justify-content: space-between;
+  }
+  // .footer__icon
+  &__icon {
+    padding: 11px 12px;
+    border-radius: 100px;
+    background: linear-gradient(90deg, #c89afc, #7c6afa);
+    transition: 0.4s;
+    &:hover {
+      transform: scale(1.07);
+    }
+  }
+}
+
+.copyright {
+  margin-top: 50px;
+  margin-bottom: 35px;
+  opacity: 0.8;
+}
+
+//<footer>=================================================

@@ -1,0 +1,30 @@
+.about-us {
+  // .about-us__container
+  &__container {
+    display: flex;
+    margin-top: 203px;
+    @media (max-width: $md3+px) {
+      flex-direction: column;
+      margin-top: 100px;
+    }
+  }
+  // .about-us__img
+  &__img {
+    margin-right: 130px;
+    max-width: 525px;
+    height: auto;
+    @media (max-width: $md3+px) {
+      margin-right: 0;
+    }
+    img {
+      width: 100%;
+    }
+  }
+  // .about-us__comtent
+  &__comtent {
+    flex: 0 1 640px;
+    @media (max-width: $md3+px) {
+      flex: 1 1 auto;
+    }
+  }
+}
